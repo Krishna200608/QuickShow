@@ -4,11 +4,12 @@ import "dotenv/config";
 import connectDB from "./configs/db.js";
 import { clerkMiddleware } from '@clerk/express'
 import { serve } from "inngest/express";
-import { inngest, functions } from "./inngest/index.js"
 
 const app = express();
 const PORT = 4000;
 await connectDB();
+import { inngest, functions } from "./inngest/index.js"
+
 // Middleware
 
 app.use(express.json());
