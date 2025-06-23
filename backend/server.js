@@ -1,13 +1,14 @@
-import express from "express";
-import cors from "cors";
 import "dotenv/config";
 import connectDB from "./configs/db.js";
+await connectDB();
+
+import express from "express";
+import cors from "cors";
 import { clerkMiddleware } from '@clerk/express'
 import { serve } from "inngest/express";
 
 const app = express();
 const PORT = 4000;
-await connectDB();
 import { inngest, functions } from "./inngest/index.js"
 
 // Middleware
