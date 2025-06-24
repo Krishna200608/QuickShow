@@ -35,7 +35,7 @@ export const updateFavorite = async (req, res) => {
 		}
 
 		if (!user.privateMetadata.favorites.includes(movieId)) {
-			user.privateMetadata.favorite.push(movieId);
+			user.privateMetadata.favorites.push(movieId);
 		} else {
             user.privateMetadata.favorites = user.privateMetadata.favorites.filter(item => item != movieId);
         }
@@ -62,6 +62,6 @@ export const getFavorites = async (req, res) => {
         res.json({success: true, movies});
     } catch (error) {
         console.log(error.message);
-        rse.json({success: false, message: error.message});
+        res.json({success: false, message: error.message});
     }
 }

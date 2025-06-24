@@ -13,21 +13,52 @@ export const AppProvider = ({ children }) => {
 	const [shows, setShows] = useState([]);
 	const [favoriteMovies, setFavoriteMovies] = useState([]);
 
-    const { user } = useUser();
-    const { getToken } = useAuth();
-    const location = useLocation();
-    const navigate = useNavigate();
+	const { user } = useUser();
+	const { getToken } = useAuth();
+	const location = useLocation();
+	const navigate = useNavigate();
 
 	const fetchIsAdmin = async () => {
 		try {
 			const { data } = await axios.get("/api/admin/is-admin", {
 				headers: { Authorization: `Bearer ${await getToken()}` },
 			});
-            setIsAdmin(data.isAdmin);
+			setIsAdmin(data.isAdmin);
 
-            if(!data.isAdmin && location.pathname.startsWith('/admin')){
-                navigate('/');
-                toast.error('You are not authorized to access admin dashboard');
+			if (!data.isAdmin && location.pathname.startsWith("/admin")) {
+				navigate("/");
+				toast.error("You are not authorized to access admin dashboard");
+			}
+		} catch (error) {
+			console.log(error);
+			toast.error(error.response.message);
+		}
+	};
+
+	const fetchShows = async () => {
+		try {
+			const { data } = await axios.get("/api/admin/all-shows");
+			if (data.success) {
+				setShows(data.shows);
+			} else {
+				toast.error(data.message);
+			}
+		} catch (error) {
+			console.log(error);
+			toast.error(error.response.message);
+		}
+	};
+
+	const fetchFavoriteMovies = async () => {
+		try {
+			const { data } = await axios.get("/api/user/favorites", {
+				headers: { Authorization: `Bearer ${await getToken()}` },
+			});
+
+            if(data.success) {
+                setFavoriteMovies(data.movies);
+            } else {
+                toast.error(data.message);
             }
 		} catch (error) {
 			console.log(error);
@@ -35,23 +66,22 @@ export const AppProvider = ({ children }) => {
 		}
 	};
 
-    const fetchShows = async () => {
-        try {
-            const { data } = await axios.get('/api/admin/all')
-        } catch (error) {
-            console.log(error);
-			toast.error(error.response.message);
-        }
-    }
+	useEffect(() => {
+		if (user) {
+			fetchIsAdmin();
+            fetchFavoriteMovies();
+		}
+	}, [user]);
 
-    useEffect(() => {
-        if(user) {
-            fetchIsAdmin();
-        }
-    } ,[user])
+	useEffect(() => {
+		fetchShows();
+	}, []);
 
 	const value = {
 		axios,
+        fetchIsAdmin,
+        user, getToken, navigate, isAdmin, shows, 
+        favoriteMovies, fetchFavoriteMovies
 	};
 
 	return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
