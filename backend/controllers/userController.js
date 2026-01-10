@@ -5,7 +5,12 @@ import Movie from "../models/Movie.js";
 //API controller Function to get the user Bookings
 export const getUserBookings = async (req, res) => {
 	try {
-		const user = req.auth().userId;
+		const auth = req.auth();
+		const user = auth?.userId;
+
+		if (!user) {
+			return res.json({ success: false, message: "Not authenticated" });
+		}
 
 		const bookings = await Booking.find({ user })
 			.populate({
@@ -26,7 +31,12 @@ export const updateFavorite = async (req, res) => {
 	try {
 		const { movieId } = req.body;
 
-		const userId = req.auth().userId;
+		const auth = req.auth();
+		const userId = auth?.userId;
+
+		if (!userId) {
+			return res.json({ success: false, message: "Not authenticated" });
+		}
 
 		const user = await clerkClient.users.getUser(userId);
 
@@ -53,7 +63,14 @@ export const updateFavorite = async (req, res) => {
 
 export const getFavorites = async (req, res) => {
     try {
-        const user = await clerkClient.users.getUser(req.auth().userId);
+        const auth = req.auth();
+        const userId = auth?.userId;
+
+        if (!userId) {
+            return res.json({ success: false, message: "Not authenticated" });
+        }
+
+        const user = await clerkClient.users.getUser(userId);
         const favorites = user.privateMetadata.favorites;
 
         // Getting movies from the database

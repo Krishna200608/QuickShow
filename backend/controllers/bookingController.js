@@ -21,7 +21,13 @@ const checkSeatsAvailabilityj = async (showId, selectedSeats) => {
 
 export const createBooking = async (req, res) => {
     try {
-        const { userId } = req.auth();
+        const auth = req.auth();
+        const userId = auth?.userId;
+
+        if (!userId) {
+            return res.json({ success: false, message: "Not authenticated" });
+        }
+
         const { showId,selectedSeats } = req.body;
         const { origin } = req.headers;
 

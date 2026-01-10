@@ -2,8 +2,13 @@ import { clerkClient } from "@clerk/express";
 
 export const protectAdmin = async (req, res, next) => {
     try {
-        const { userId } = req.auth();
-        const user = await clerkClient.users.getUser(userId);
+        const auth = req.auth();
+        
+        if (!auth || !auth.userId) {
+            return res.json({success: false, message: "Not authenticated"});
+        }
+
+        const user = await clerkClient.users.getUser(auth.userId);
 
         if(user.privateMetadata.role !== 'admin'){
             return res.json({success: false, message: "not authotized"});
