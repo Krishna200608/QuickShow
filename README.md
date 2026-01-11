@@ -10,8 +10,8 @@
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-FF6B6B?style=for-the-badge&labelColor=000000)](https://quickshow-frontend-iota.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/elyse502/QuickShow?style=for-the-badge&color=yellow)](https://github.com/elyse502/QuickShow/stargazers)
-[![Forks](https://img.shields.io/github/forks/elyse502/QuickShow?style=for-the-badge&color=teal)](https://github.com/elyse502/QuickShow/network/members)
+[![Stars](https://img.shields.io/github/stars/Krishna200608/QuickShow?style=for-the-badge&color=yellow)](https://github.com/Krishna200608/QuickShow/stargazers)
+[![Forks](https://img.shields.io/github/forks/Krishna200608/QuickShow?style=for-the-badge&color=teal)](https://github.com/Krishna200608/QuickShow/network/members)
 
 <br/>
 
@@ -251,10 +251,10 @@ Follow these steps to set up QuickShow locally:
 
 ```bash
 # Clone using HTTPS
-git clone https://github.com/elyse502/QuickShow.git
+git clone https://github.com/Krishna200608/QuickShow.git
 
 # Or using SSH
-git clone git@github.com:elyse502/QuickShow.git
+git clone git@github.com:Krishna200608/QuickShow.git
 
 # Navigate to project directory
 cd QuickShow
@@ -318,9 +318,9 @@ Create `backend/.env`:
 # ============================================
 # 🗄️ DATABASE CONFIGURATION
 # ============================================
-MONGODB_URI=mongodb://localhost:27017/quickshow
+MONGODB_URI=mongodb://localhost:27017
 # Or use MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/quickshow
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net
 
 # ============================================
 # 🔐 CLERK AUTHENTICATION
@@ -701,7 +701,7 @@ quickshow/
 <br><sub>Styling</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://clerk.com/favicon.ico" width="48" height="48" alt="Clerk" />
+<img src="https://clerk.com/v2/favicon.ico" width="48" height="48" alt="Clerk" />
 <br><strong>Clerk</strong>
 <br><sub>Authentication</sub>
 </td>
@@ -745,7 +745,7 @@ quickshow/
 <br><sub>ODM</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://clerk.com/favicon.ico" width="48" height="48" alt="Clerk" />
+<img src="https://clerk.com/b2/favicon.ico" width="48" height="48" alt="Clerk" />
 <br><strong>Clerk Express</strong>
 <br><sub>Auth Middleware</sub>
 </td>
@@ -981,7 +981,7 @@ Thanks to all contributors who have helped make QuickShow better!
 
 <div align="center">
 
-[![Contributors](https://contrib.rocks/image?repo=elyse502/QuickShow)](https://github.com/elyse502/QuickShow/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Krishna200608/QuickShow)](https://github.com/Krishna200608/QuickShow/graphs/contributors)
 
 </div>
 
@@ -994,7 +994,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2026 Elysée NIYIBIZI
+Copyright (c) 2026 Krishna Sikheriya
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1013,13 +1013,14 @@ copies or substantial portions of the Software.
 
 <div align="center">
 
-### **Elysée NIYIBIZI**
+<img src="https://github.com/Krishna200608.png" width="150" style="border-radius: 50%;" alt="Krishna Sikheriya" />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://elyse502.github.io/Elysee-Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Niyibizi_Elyse)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:elyseniyibizi502@gmail.com)
+### **Krishna Sikheriya**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna200608)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krishna200608/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Krishna200608)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna200608@gmail.com)
 
 <br/>
 
@@ -1055,7 +1056,7 @@ Special thanks to:
 
 <br/>
 
-**Built with ❤️ by [Elysée NIYIBIZI](https://elyse502.github.io/Elysee-Portfolio/)**
+**Built with ❤️ by [Krishna Sikheriya](https://github.com/Krishna200608)**
 
 <br/>
 
