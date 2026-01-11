@@ -209,27 +209,25 @@
 <div align="center">
 
 ### 🏠 Home Page
-![Home Page](<img width="1920" height="2881" alt="Image" src="https://github.com/user-attachments/assets/0a9b1197-462d-4493-b289-883751c8b588" />
-)
+![Home Page](screenshots/home-page.png)
 *Modern landing page with featured movies and trending content*
 
 <br/>
 
 ### 🎬 Movie Details
-![Movie Details](<img width="1920" height="2786" alt="Image" src="https://github.com/user-attachments/assets/ca53a26b-a0c7-4f27-9665-d118c6382b5b" />)
+![Movie Details](screenshots/movie-details.png)
 *Comprehensive movie information with trailers and booking options*
 
 <br/>
 
 ### 🎟️ Seat Selection
-![Seat Selection](<img width="1920" height="1696" alt="Image" src="https://github.com/user-attachments/assets/f99e0645-235a-460e-8d48-7551f0985414" />)
+![Seat Selection](screenshots/seat-selection.png)
 *Interactive theater layout with real-time seat availability*
 
 <br/>
 
 ### 👨‍💼 Admin Dashboard
-![Admin Dashboard](<img width="1920" height="1376" alt="Image" src="https://github.com/user-attachments/assets/dd1158a4-f6b9-46c8-9937-b439f1f49e3c" />
-)
+![Admin Dashboard](screenshots/admin-dashboard.png)
 *Powerful analytics and management interface*
 
 </div>
