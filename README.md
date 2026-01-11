@@ -981,7 +981,8 @@ Thanks to all contributors who have helped make QuickShow better!
 
 <div align="center">
 
-[![Contributors](https://contrib.rocks/image?repo=Krishna200608/QuickShow)](https://github.com/Krishna200608/QuickShow/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Krishna200608/QuickShow&max=100&v=2)](https://github.com/Krishna200608/QuickShow/graphs/contributors)
+
 
 </div>
 
