@@ -745,7 +745,7 @@ quickshow/
 <br><sub>ODM</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://clerk.com/b2/favicon.ico" width="48" height="48" alt="Clerk" />
+<img src="https://clerk.com/v2/favicon.ico" width="48" height="48" alt="Clerk" />
 <br><strong>Clerk Express</strong>
 <br><sub>Auth Middleware</sub>
 </td>
