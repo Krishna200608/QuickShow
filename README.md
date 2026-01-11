@@ -1068,7 +1068,8 @@ Special thanks to:
 
 <br/>
 
-**[⬆ Back to Top](#-quickshow-)**
+**[⬆ Back to Top](#quickshow)**
+
 
 <br/>
 
