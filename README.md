@@ -1,5 +1,6 @@
 <div align="center">
 
+<a id="top"></a>
 # 🎬 QUICKSHOW 🎟️
 
 ### *Your Ultimate Movie Booking Companion*
@@ -1068,7 +1069,7 @@ Special thanks to:
 
 <br/>
 
-**[⬆ Back to Top](#quickshow)**
+[⬆ Back to Top](#top)
 
 
 <br/>
